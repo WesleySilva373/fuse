@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuseletric | Fusíveis Industriais de Alta Tecnologia</title>
+    <meta name="description" content="Fuseletric - Fabricante brasileira de fusíveis industriais, média tensão e fotovoltaicos com mais de 30 anos de excelência.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body class="loading">
+    <nav id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo glitch-hover" data-text="FUSELETRIC">
+                FUSE<span>LETRIC</span>
+            </a>
+            <div id="mobile-menu-overlay"></div>
+            <ul class="nav-links" id="nav-menu">
+                <li class="mobile-only-header">
+                    <span class="logo">FUSE<span>LETRIC</span></span>
+                    <button id="close-menu"><i data-lucide="x"></i></button>
+                </li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#empresa">Empresa</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li class="mobile-only-cta"><a href="#orcamento" class="btn btn-primary">Orçamento</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="#orcamento" class="btn btn-primary desktop-only">Orçamento</a>
+                <button id="hamburger-menu" aria-label="Abrir menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div id="hero-canvas-container" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;"></div>
+            <div class="container hero-content">
+                <h1 class="energize-text">Potência sob <span>Controle.</span></h1>
+                <p class="hero-subtitle">Proteção elétrica de alta performance para indústria, média tensão e energia solar.</p>
+                <div class="hero-btns">
+                    <a href="#orcamento" class="btn btn-primary btn-pulse">Solicitar Orçamento</a>
+                    <a href="#produtos" class="btn btn-outline btn-neon-blue">Ver Produtos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container stats-grid">
+                <div class="stat-item">
+                    <h3>+30</h3>
+                    <p>Anos de Mercado</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Tecnologia Brasileira</p>
+                </div>
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Produtos no Catálogo</p>
+                </div>
+                <div class="stat-item">
+                    <h3>24h</h3>
+                    <p>Suporte Técnico</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="produtos">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nossas <span>Soluções</span></h2>
+                    <div class="underline"></div>
+                    <p style="margin-top: 1rem; color: var(--text-muted);">Proteção de alta performance para todos os segmentos industriais.</p>
+                </div>
+
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/images/industrial.png" alt="Fusíveis Industriais">
+                        </div>
+                        <div class="product-info">
+                            <h3>Fusíveis Industriais</h3>
+                            <p>Linha completa de fusíveis NH, aR, gG e cilíndricos para proteção de máquinas e painéis elétricos.</p>
+                            <ul style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                <li>• Classes gG / aM / aR</li>
+                                <li>• Tamanhos NH 000 a NH 4</li>
+                                <li>• Alta capacidade de interrupção</li>
+                            </ul>
+                            <a href="#orcamento" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/images/medium-voltage.png" alt="Média Tensão">
+                        </div>
+                        <div class="product-info">
+                            <h3>Média Tensão</h3>
+                            <p>Fusíveis HH e TP para proteção de transformadores, motores e cabines primárias até 36kV.</p>
+                            <ul style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                <li>• Tensões de 2.4kV a 36kV</li>
+                                <li>• Padrão DIN e ANSI</li>
+                                <li>• Uso interno e externo</li>
+                            </ul>
+                            <a href="#orcamento" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/images/solar.png" alt="Fotovoltaico">
+                        </div>
+                        <div class="product-info">
+                            <h3>Fotovoltaico</h3>
+                            <p>Proteção especializada para sistemas de energia solar, garantindo segurança e eficiência em strings.</p>
+                            <ul style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 1rem;">
+                                <li>• 1000Vcc a 1500Vcc</li>
+                                <li>• Correntes de 1A a 32A</li>
+                                <li>• Alta performance térmica</li>
+                            </ul>
+                            <a href="#orcamento" class="btn btn-outline">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Empresa Section -->
+        <section id="empresa" class="section-secondary">
+            <div class="container">
+                <div class="empresa-content">
+                    <div class="empresa-text">
+                        <h2>Tradição e <span>Inovação</span></h2>
+                        <p>Fundada há mais de três décadas, a Fuseletric consolidou-se como referência nacional na fabricação de dispositivos de proteção elétrica.</p>
+                        <p>Nossa missão é fornecer segurança absoluta para a infraestrutura industrial brasileira, através de processos rigorosos de qualidade e engenharia de ponta.</p>
+                        <div class="empresa-features">
+                            <div class="feature-item">
+                                <i data-lucide="shield-check"></i>
+                                <div>
+                                    <h4>Qualidade</h4>
+                                    <p>Certificação ISO e normas NBR/IEC.</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <i data-lucide="zap"></i>
+                                <div>
+                                    <h4>Agilidade</h4>
+                                    <p>Entrega rápida para todo o Brasil.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="empresa-image">
+                        <div class="image-wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustentabilidade Section -->
+        <section id="sustentabilidade">
+            <div class="container text-center">
+                <div class="section-title">
+                    <h2>Compromisso com o <span>Futuro</span></h2>
+                    <div class="underline"></div>
+                </div>
+                <p class="sustentabilidade-p">A Fuseletric acredita na energia limpa. Nossa linha fotovoltaica é projetada para maximizar a vida útil de usinas solares, contribuindo para uma matriz energética sustentável.</p>
+            </div>
+        </section>
+
+        <!-- Orçamento Section -->
+        <section id="orcamento" class="section-secondary">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Solicite um <span>Orçamento</span></h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="orcamento-grid">
+                    <form class="orcamento-form">
+                        <input type="text" placeholder="Nome / Empresa">
+                        <input type="email" placeholder="E-mail">
+                        <select>
+                            <option>Selecione o Produto</option>
+                            <option>Fusíveis Industriais</option>
+                            <option>Média Tensão</option>
+                            <option>Fotovoltaico</option>
+                            <option>Outros</option>
+                        </select>
+                        <textarea placeholder="Sua mensagem" rows="5"></textarea>
+                        <button class="btn btn-primary">Enviar Solicitação</button>
+                    </form>
+                    <div class="vendas-info">
+                        <h3>Vendas Diretas</h3>
+                        <p>Prefere comprar online? Visite nossa loja oficial no Mercado Livre para pronta entrega.</p>
+                        <a href="https://www.mercadolivre.com.br/pagina/fuseletric" target="_blank" class="btn btn-outline ml-btn">
+                            <i data-lucide="shopping-cart"></i>
+                            Loja Mercado Livre
+                        </a>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i data-lucide="phone"></i>
+                                <span>(11) 3323-8656</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="message-circle"></i>
+                                <span>(11) 9 8460-7777</span>
+                            </div>
+                            <div class="contact-item">
+                                <i data-lucide="mail"></i>
+                                <span>vendas@fuseletric.com.br</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3 class="logo">FUSE<span>LETRIC</span></h3>
+                    <p style="color: var(--text-muted);">Líder em fusíveis industriais no Brasil. Segurança e tecnologia para sua infraestrutura elétrica.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#empresa">Empresa</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Localização</h4>
+                    <p><i data-lucide="map-pin" size="18"></i> Rua Alvarenga Peixoto, 332 - Vila Anastácio, São Paulo - SP</p>
+                    <p><i data-lucide="clock" size="18"></i> Seg - Sex: 08:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fuseletric Indústria e Comércio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fusel AI Assistant Widget -->
+    <div id="fusel-widget">
+        <button id="fusel-trigger" class="btn-pulse">
+            <i data-lucide="zap"></i>
+        </button>
+        
+        <div id="fusel-chat" class="hidden">
+            <div class="fusel-header">
+                <div class="fusel-avatar">
+                    <i data-lucide="zap" size="16"></i>
+                </div>
+                <div class="fusel-title">
+                    <h4>Fusel</h4>
+                    <span>Assistente Técnico</span>
+                </div>
+                <button id="close-fusel"><i data-lucide="x" size="18"></i></button>
+            </div>
+            
+            <div id="fusel-messages">
+                <!-- Messages will appear here -->
+            </div>
+            
+            <div id="fusel-suggestions">
+                <button class="suggestion-btn">Qual fusível para sistema solar?</button>
+                <button class="suggestion-btn">Fusível para motor elétrico</button>
+                <button class="suggestion-btn">Quero fazer um orçamento</button>
+            </div>
+            
+            <div class="fusel-input-area">
+                <input type="text" id="fusel-input" placeholder="Digite sua dúvida técnica...">
+                <button id="send-fusel"><i data-lucide="send" size="18"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+</body>
+</html>
