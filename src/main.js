@@ -192,11 +192,13 @@ if (hamburgerMenu) {
     mobileOverlay.addEventListener('click', toggleMenu);
 }
 
-navMenu.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        if (navMenu.classList.contains('active')) toggleMenu();
+if (navMenu) {
+    navMenu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (navMenu.classList.contains('active')) toggleMenu();
+        });
     });
-});
+}
 
 // --- FUSEL AI ASSISTANT LOGIC ---
 const fuselTrigger = document.getElementById('fusel-trigger');
@@ -207,14 +209,18 @@ const fuselInput = document.getElementById('fusel-input');
 const sendFusel = document.getElementById('send-fusel');
 const suggestionBtns = document.querySelectorAll('.suggestion-btn');
 
-fuselTrigger.addEventListener('click', () => {
-    fuselChat.classList.toggle('hidden');
-    if (!fuselChat.classList.contains('hidden') && fuselMessages.children.length === 0) {
-        addMessage('Olá. Sou o Fusel, a inteligência técnica da Fuseletric. Como posso auxiliar nos seus projetos hoje?', 'ai');
-    }
-});
+if (fuselTrigger && fuselChat && fuselMessages) {
+    fuselTrigger.addEventListener('click', () => {
+        fuselChat.classList.toggle('hidden');
+        if (!fuselChat.classList.contains('hidden') && fuselMessages.children.length === 0) {
+            addMessage('Olá. Sou o Fusel, a inteligência técnica da Fuseletric. Como posso auxiliar nos seus projetos hoje?', 'ai');
+        }
+    });
+}
 
-closeFusel.addEventListener('click', () => fuselChat.classList.add('hidden'));
+if (closeFusel && fuselChat) {
+    closeFusel.addEventListener('click', () => fuselChat.classList.add('hidden'));
+}
 
 function handleSend() {
     const text = fuselInput.value.trim();
@@ -232,10 +238,14 @@ function handleSend() {
     }, 1500);
 }
 
-sendFusel.addEventListener('click', handleSend);
-fuselInput.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') handleSend();
-});
+if (sendFusel) {
+    sendFusel.addEventListener('click', handleSend);
+}
+if (fuselInput) {
+    fuselInput.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') handleSend();
+    });
+}
 
 suggestionBtns.forEach(btn => {
     btn.addEventListener('click', () => {
